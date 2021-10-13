@@ -1,0 +1,28 @@
+.container{
+    border: 3px solid #98c1d9;
+    background-color: #3d5a80;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+.input{
+    border: 3px solid #98c1d9;
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #3d5a80;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 50px;
+    color: #e0fbfc;
+}
+.input::placeholder{
+    color: #e0fbfc;
+    font-size: 1rem;
+}
+.input:focus{
+    outline: none;
+    border: #e0fbfc;
+    box-shadow: 0 3px 8px rgba(74, 74, 74, 0.24);
+}

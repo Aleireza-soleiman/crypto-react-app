@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { getCoins } from '../service/api';
 //Component
 import CoinDetails from './CoinDetails';
+//Styles
+import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
     const [coins , setCoins] = useState([]);
@@ -20,8 +22,8 @@ const LandingPage = () => {
 
     return (
         <>
-            <input type="text"  value={search} onChange={searchHandler} />
-            <div>
+            <input className={styles.input} type="text" placeholder="search ..."  value={search} onChange={searchHandler} />
+            <div className={styles.container} >
                 {
                     searchedCoin.map(coin => <CoinDetails
                         key={coin.id}
